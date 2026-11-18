@@ -1,5 +1,5 @@
 {
-  "name": "wisense",
+  "name": "wisense-radar",
   "rewrites": [
     { "source": "/", "destination": "/frontend/observatory.html" },
     { "source": "/3d", "destination": "/frontend/observatory.html" },
