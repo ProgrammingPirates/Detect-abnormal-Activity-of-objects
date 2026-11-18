@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/frontend/observatory.html" },
+    { "source": "/3d", "destination": "/frontend/observatory.html" },
+    { "source": "/vitals", "destination": "/frontend/index.html" },
+    { "source": "/packet-journey", "destination": "/frontend/packet_journey.html" },
+    { "source": "/packet_journey", "destination": "/frontend/packet_journey.html" },
+    { "source": "/robotics", "destination": "/frontend/robotics_simulator.html" },
+    { "source": "/report", "destination": "/frontend/report.html" },
+    { "source": "/paper", "destination": "/docs/reports/WiSense_WiFi_Sensing_Research_Paper.pdf" },
+    { "source": "/guide", "destination": "/docs/reports/WiSense_Project_Report.pdf" },
+    { "source": "/api/:path*", "destination": "/api/index.py" },
+    { "source": "/observatory/:path*", "destination": "/frontend/observatory/:path*" },
+    { "source": "/services/:path*", "destination": "/frontend/services/:path*" },
+    { "source": "/components/:path*", "destination": "/frontend/components/:path*" },
+    { "source": "/utils/:path*", "destination": "/frontend/utils/:path*" },
+    { "source": "/config/:path*", "destination": "/frontend/config/:path*" },
+    { "source": "/pose-fusion/:path*", "destination": "/frontend/pose-fusion/:path*" },
+    { "source": "/docs/:path*", "destination": "/docs/:path*" }
+  ]
+}
