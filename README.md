@@ -312,7 +312,6 @@ Ceiling fans rotate at high periodic frequencies (10–25 Hz), whereas human bre
 As prepared for the final academic defense submission on 19th November 2026:
 1. `1_Project_Report/`: Comprehensive formal project report formatted in `.docx` and `.pdf` across all 10 required academic headings.
 2. `2_Project_Code/`: Complete runnable source repository including backend DSP, firmware, and WebGL frontend.
-3. `WiSense_Final_Submission_Package.zip`: Self-contained submission archive.
 
 ---
 
