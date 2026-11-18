@@ -1,7 +1,5 @@
 {
-  "name": "wisense-radar",
-  "version": 2,
-  "cleanUrls": true,
+  "name": "wisense",
   "rewrites": [
     { "source": "/", "destination": "/frontend/observatory.html" },
     { "source": "/3d", "destination": "/frontend/observatory.html" },
@@ -12,13 +10,6 @@
     { "source": "/report", "destination": "/frontend/report.html" },
     { "source": "/paper", "destination": "/docs/reports/WiSense_WiFi_Sensing_Research_Paper.pdf" },
     { "source": "/guide", "destination": "/docs/reports/WiSense_Project_Report.pdf" },
-    { "source": "/api/:path*", "destination": "/api/index.py" },
-    { "source": "/observatory/:path*", "destination": "/frontend/observatory/:path*" },
-    { "source": "/services/:path*", "destination": "/frontend/services/:path*" },
-    { "source": "/components/:path*", "destination": "/frontend/components/:path*" },
-    { "source": "/utils/:path*", "destination": "/frontend/utils/:path*" },
-    { "source": "/config/:path*", "destination": "/frontend/config/:path*" },
-    { "source": "/pose-fusion/:path*", "destination": "/frontend/pose-fusion/:path*" },
-    { "source": "/docs/:path*", "destination": "/docs/:path*" }
+    { "source": "/api/:path*", "destination": "/api/index.py" }
   ]
 }
