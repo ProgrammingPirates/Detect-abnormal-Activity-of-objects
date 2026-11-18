@@ -177,7 +177,6 @@ Detect-abnormal-Activity-of-objects/
 ├── docs/               # Academic papers, technical reports, and architectural diagrams
 │   ├── images/         # High-resolution architectural schematics & UI screenshots
 │   └── reports/        # Formal IEEE dissertation reports & M.Tech defense PDFs
-├── submission/         # Official college defense deliverables (Project Report & Source Code)
 ├── .gitignore          # Standard repository exclusion rules
 ├── README.md           # Main project presentation & setup documentation
 └── RUN_PROJECT.bat     # One-click instant launcher for Windows
@@ -302,14 +301,6 @@ Yes. Wi-Fi microwave frequencies (2.4 GHz and 5 GHz) penetrate standard resident
 
 ### 3. How does WiSense prevent ceiling fan interference?
 Ceiling fans rotate at high periodic frequencies (10–25 Hz), whereas human breathing occurs strictly between 0.1 and 0.5 Hz. The sharp roll-off of our 4th-order Butterworth bandpass filter completely attenuates high-frequency fan harmonics.
-
----
-
-## 📁 Submission Package Contents
-
-As prepared for the final academic defense submission on 19th November 2026:
-1. `1_Project_Report/`: Comprehensive formal project report formatted in `.docx` and `.pdf` across all 10 required academic headings.
-2. `2_Project_Code/`: Complete runnable source repository including backend DSP, firmware, and WebGL frontend.
 
 ---
 

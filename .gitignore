@@ -54,3 +54,6 @@ desktop.ini
 
 # Local build / utility scripts
 scripts/
+
+# Local college submission folder
+submission/
