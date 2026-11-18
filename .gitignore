@@ -61,3 +61,5 @@ submission/
 # Local batch launchers
 RUN_PROJECT.bat
 *.bat
+
+.vercel

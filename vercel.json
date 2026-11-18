@@ -6,10 +6,12 @@
     { "source": "/vitals", "destination": "/frontend/index.html" },
     { "source": "/packet-journey", "destination": "/frontend/packet_journey.html" },
     { "source": "/packet_journey", "destination": "/frontend/packet_journey.html" },
-    { "source": "/robotics", "destination": "/frontend/robotics_simulator.html" },
     { "source": "/report", "destination": "/frontend/report.html" },
     { "source": "/paper", "destination": "/docs/reports/WiSense_WiFi_Sensing_Research_Paper.pdf" },
     { "source": "/guide", "destination": "/docs/reports/WiSense_Project_Report.pdf" },
+    { "source": "/style.css", "destination": "/frontend/style.css" },
+    { "source": "/app.js", "destination": "/frontend/app.js" },
+    { "source": "/observatory/:path*", "destination": "/frontend/observatory/:path*" },
     { "source": "/api/:path*", "destination": "/api/index.py" }
   ]
 }

@@ -278,11 +278,6 @@ def defense_guide_pdf():
 def packet_journey_page():
     return send_from_directory(app.static_folder, "packet_journey.html")
 
-@app.route("/robotics")
-@app.route("/robotics-simulator")
-def robotics_simulator_page():
-    return send_from_directory(app.static_folder, "robotics_simulator.html")
-
 @app.route("/health")
 def health_check():
     """Liveness probe expected by Observatory main.js auto-detect"""
@@ -493,7 +488,6 @@ if __name__ == "__main__":
     print("Research Paper:     http://localhost:5000/paper")
     print("Defense Guide:      http://localhost:5000/guide")
     print("Packet Journey:     http://localhost:5000/packet-journey")
-    print("Robotics Simulator: http://localhost:5000/robotics")
     print("Live WebSocket:     ws://localhost:5000/ws/sensing")
     print("REST Endpoints:")
     print(" - Health:          http://localhost:5000/health")

@@ -34,17 +34,25 @@ class handler(BaseHTTPRequestHandler):
                 "hr_breath_ratio": round(heart_bpm / resp_bpm, 2)
             }
         else:
+            subcarriers = [round(22.0 + 12.0 * math.sin(i * 0.25 + t * 1.5) + (i % 5) * 1.5, 1) for i in range(56)]
             payload = {
                 "timestamp": t,
                 "presence": True,
                 "motion_score": round(motion_var, 3),
+                "breathing_bpm": round(resp_bpm, 1),
+                "heart_bpm": round(heart_bpm, 1),
+                "subcarrier_amplitudes": subcarriers,
+                "anomaly": {
+                    "detected": False,
+                    "type": "NORMAL",
+                    "severity": "LOW",
+                    "description": "All environmental baseline parameters secure.",
+                    "fall_detected": False,
+                    "object_tamper_score": 0.02
+                },
                 "vital_signs": {
                     "respiration_bpm": round(resp_bpm, 1),
                     "heart_bpm": round(heart_bpm, 1)
-                },
-                "anomalies": {
-                    "fall_detected": False,
-                    "object_displacement": False
                 }
             }
             
