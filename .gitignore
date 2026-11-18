@@ -57,3 +57,7 @@ scripts/
 
 # Local college submission folder
 submission/
+
+# Local batch launchers
+RUN_PROJECT.bat
+*.bat

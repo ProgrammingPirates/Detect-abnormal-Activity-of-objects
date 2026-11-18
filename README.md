@@ -178,8 +178,7 @@ Detect-abnormal-Activity-of-objects/
 │   ├── images/         # High-resolution architectural schematics & UI screenshots
 │   └── reports/        # Formal IEEE dissertation reports & M.Tech defense PDFs
 ├── .gitignore          # Standard repository exclusion rules
-├── README.md           # Main project presentation & setup documentation
-└── RUN_PROJECT.bat     # One-click instant launcher for Windows
+└── README.md           # Main project presentation & setup documentation
 ```
 
 ---
@@ -227,17 +226,11 @@ pip install -r backend/requirements.txt
 *Key packages installed: `flask`, `flask-socketio`, `numpy`, `scipy`, `python-docx`, `python-pptx`, `reportlab`.*
 
 ### Step 4: Launch the WiSense System
-
-#### Option 1: One-Click Windows Launcher (Fastest)
-Double-click `RUN_PROJECT.bat` in the project root folder.  
-This automatically initiates the background DSP server, starts signal ingestion, and launches your browser.
-
-#### Option 2: Manual Terminal Execution
+Start the backend server:
 ```bash
-# Terminal 1: Launch the Flask & WebSocket Streaming Backend
 python backend/app.py
 ```
-*(The server initializes on `http://localhost:5000` and automatically starts synthetic 20 Hz CSI data ingestion if no physical ESP32 node is broadcasting).*
+*(The server initializes on `http://localhost:5000` and automatically starts 20 Hz CSI data ingestion if no physical ESP32 node is broadcasting).*
 
 ### Step 5: (Optional) Connect Physical ESP32-S3 Hardware Node
 If using physical hardware:
