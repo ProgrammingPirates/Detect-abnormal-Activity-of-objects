@@ -51,3 +51,6 @@ desktop.ini
 *.zip
 *.tar.gz
 *.rar
+
+# Local build / utility scripts
+scripts/

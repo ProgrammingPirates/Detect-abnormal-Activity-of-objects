@@ -177,7 +177,6 @@ Detect-abnormal-Activity-of-objects/
 ├── docs/               # Academic papers, technical reports, and architectural diagrams
 │   ├── images/         # High-resolution architectural schematics & UI screenshots
 │   └── reports/        # Formal IEEE dissertation reports & M.Tech defense PDFs
-├── scripts/            # PDF generation, compilation, and packaging automation scripts
 ├── submission/         # Official college defense deliverables (Project Report & Source Code)
 ├── .gitignore          # Standard repository exclusion rules
 ├── README.md           # Main project presentation & setup documentation
