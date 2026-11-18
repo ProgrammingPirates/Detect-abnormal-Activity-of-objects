@@ -255,9 +255,9 @@ def index():
 @app.route("/report")
 def report_page():
     parent_dir = os.path.abspath(os.path.join(app.static_folder, ".."))
-    guides_dir = os.path.join(parent_dir, "docs", "guides")
-    if os.path.exists(os.path.join(guides_dir, "report.html")):
-        return send_from_directory(guides_dir, "report.html")
+    reports_dir = os.path.join(parent_dir, "docs", "reports")
+    if os.path.exists(os.path.join(reports_dir, "report.html")):
+        return send_from_directory(reports_dir, "report.html")
     return send_from_directory(parent_dir, "report.html")
 
 @app.route("/paper")

@@ -174,12 +174,11 @@ Detect-abnormal-Activity-of-objects/
 ├── backend/            # Central Flask, WebSocket & Edge DSP engine (I/Q, Hampel, Vitals, Falls)
 ├── frontend/           # Live WebGL 3D Observatory & real-time telemetry dashboard
 ├── firmware/           # ESP32-S3 Promiscuous CSI capture firmware (.ino)
-├── docs/               # Academic papers, technical defense guides, and architectural diagrams
-│   ├── guides/         # Comprehensive defense scripts, research notes & HTML reports
+├── docs/               # Academic papers, technical reports, and architectural diagrams
 │   ├── images/         # High-resolution architectural schematics & UI screenshots
 │   └── reports/        # Formal IEEE dissertation reports & M.Tech defense PDFs
 ├── scripts/            # PDF generation, compilation, and packaging automation scripts
-├── submission/         # Final academic defense bundle (Reports, Slides, Video Script & .zip)
+├── submission/         # Official college defense deliverables (Project Report & Source Code)
 ├── .gitignore          # Standard repository exclusion rules
 ├── README.md           # Main project presentation & setup documentation
 └── RUN_PROJECT.bat     # One-click instant launcher for Windows
