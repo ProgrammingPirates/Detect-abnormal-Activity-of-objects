@@ -255,19 +255,26 @@ def index():
 @app.route("/report")
 def report_page():
     parent_dir = os.path.abspath(os.path.join(app.static_folder, ".."))
+    guides_dir = os.path.join(parent_dir, "docs", "guides")
+    if os.path.exists(os.path.join(guides_dir, "report.html")):
+        return send_from_directory(guides_dir, "report.html")
     return send_from_directory(parent_dir, "report.html")
 
 @app.route("/paper")
 def paper_pdf():
     parent_dir = os.path.abspath(os.path.join(app.static_folder, ".."))
+    reports_dir = os.path.join(parent_dir, "docs", "reports")
+    if os.path.exists(os.path.join(reports_dir, "WiSense_WiFi_Sensing_Research_Paper.pdf")):
+        return send_from_directory(reports_dir, "WiSense_WiFi_Sensing_Research_Paper.pdf")
     return send_from_directory(parent_dir, "WiSense_WiFi_Sensing_Research_Paper.pdf")
 
 @app.route("/guide")
 def defense_guide_pdf():
     parent_dir = os.path.abspath(os.path.join(app.static_folder, ".."))
-    if os.path.exists(os.path.join(parent_dir, "WiSense_Technical_Defense_Guide.pdf")):
-        return send_from_directory(parent_dir, "WiSense_Technical_Defense_Guide.pdf")
-    return send_from_directory(parent_dir, "WiSense_MTech_Complete_Guide_Hinglish.pdf")
+    reports_dir = os.path.join(parent_dir, "docs", "reports")
+    if os.path.exists(os.path.join(reports_dir, "WiSense_Technical_Defense_Guide.pdf")):
+        return send_from_directory(reports_dir, "WiSense_Technical_Defense_Guide.pdf")
+    return send_from_directory(reports_dir, "WiSense_MTech_Complete_Guide_Hinglish.pdf")
 
 @app.route("/packet-journey")
 @app.route("/packet_journey")
