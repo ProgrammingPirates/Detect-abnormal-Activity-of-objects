@@ -7,6 +7,8 @@
     { "source": "/packet-journey", "destination": "/frontend/packet_journey.html" },
     { "source": "/packet_journey", "destination": "/frontend/packet_journey.html" },
     { "source": "/report", "destination": "/frontend/report.html" },
+    { "source": "/ans", "destination": "/frontend/ans.html" },
+    { "source": "/ans.html", "destination": "/frontend/ans.html" },
     { "source": "/paper", "destination": "/docs/reports/WiSense_WiFi_Sensing_Research_Paper.pdf" },
     { "source": "/guide", "destination": "/docs/reports/WiSense_Project_Report.pdf" },
     { "source": "/style.css", "destination": "/frontend/style.css" },

@@ -63,3 +63,12 @@ RUN_PROJECT.bat
 *.bat
 
 .vercel
+
+# Exam-related local files (Hidden from GitHub repository)
+*EXAM*
+*exam*
+build_ans_page.py
+generate_exam*.py
+iot_exam_solution.py
+iot_exam_visualization.png
+*.docx
